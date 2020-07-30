@@ -1,0 +1,131 @@
+
+
+body{ 
+    background-image: url(pc.jpg);
+    background-color: green;
+     background-repeat: no-repeat ;
+    background-size: 100%;
+     padding: 0px;
+      margin: 0px;
+     height: 500px; 
+    }
+    hr{
+      border-bottom: 7px dashed rgb(118, 243, 118);
+    margin-top: -0px;
+    }
+    .walk{
+      width: 380px;
+      background-image: url(walk-left.png);
+      background-repeat: repeat-x;
+    
+      animation: walk 1s steps(4) infinite,
+      animate 17s linear infinite;
+      
+     }
+     @keyframes walk {
+       0%
+         {
+           background-position: 0
+         }
+         100%
+         {
+    background-position: 1536px
+         }
+    
+     }
+     @keyframes animate{
+       0%
+       {
+    transform:translatex(-100px) 
+       }
+       100%
+       {
+    transform: translatex(1850px);
+       }
+     }
+     .fly{
+       width: 100%;
+       height: 100px;
+     }
+     .bird-div1{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-image: url(bird1.png),animate 10s linear infinite;
+     
+    
+       width: 60px;
+       height: 56px;
+       animation: fly-bird 2s steps(5) infinite;
+      
+       }
+     .bird-div2{
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      background-image: url(bird1.png);
+    
+     width: 60px;
+       height: 56px;
+       animation: fly-bird 2s steps(5) infinite,animate 10s linear infinite;
+       
+     }
+     .bird-div3{
+      position: absolute;
+      top: 100px;
+      left: 200px;
+      background-image: url(bird1.png);
+       width: 66px;
+       height: 56px;
+       animation: fly-bird 3s steps(5) infinite,animate 10s linear infinite;
+      
+      }
+      .bird-div4{
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        background-image: url(bird1.png);
+       
+      
+         width: 66px;
+         height: 56px;
+         animation: fly-bird 1s steps(5) infinite,animate 10s linear infinite;
+        
+        }
+        .bird-div5{
+          position: absolute;
+          top: 200px;
+          left: 200px;
+          background-image: url(bird1.png);
+         
+        
+           width: 66px;
+           height: 56px;
+           animation: fly-bird 1s steps(5) infinite,animate 10s linear infinite;
+        }
+        
+     @keyframes fly-bird {
+      0%
+         {
+           background-position:10px 0px;
+         }
+         100%
+         {
+    background-position: -918px 0px;
+         }
+     }
+     .adio{
+      margin-top: -200px;
+     }
+     @media screen and (min-width:480px)
+     {.walk{
+         height: 250px;
+     }
+
+     }
+     @media screen and (min-width:980px)
+     {.walk{
+         height: 850px;
+     }
+
+     }
